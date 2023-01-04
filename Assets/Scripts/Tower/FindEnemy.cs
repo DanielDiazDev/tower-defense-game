@@ -17,9 +17,9 @@ namespace Tower
             InvokeRepeating("UpdateTarget", 0.0f, 0.5f);
         }
 
-        /*private void Update()
+        private void Update()
         {
-            // Enemy Detection
+            
             if (_target != null)
             {
 
@@ -45,15 +45,14 @@ namespace Tower
                 }
                 if (_detected)
                 {
-                    //Gun.transform.up = Direction;
                     if (Time.time > _nextTimeToFire)
                     {
                         _nextTimeToFire = Time.time + 1 / fireRate;
-                        
+                        Debug.Log("Disparo");
                     }
                 }
             }
-        }*/
+        }
 
         private void OnDrawGizmosSelected()
         {
